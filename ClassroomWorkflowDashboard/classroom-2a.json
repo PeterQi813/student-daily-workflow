@@ -1,0 +1,38 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "dashboardTitle": "Classroom 2A Daily Workflows",
+      "classroomName": "Classroom 2A",
+      "dateLabel": "Mar 14, 2026"
+    },
+    "relationships": {
+      "workflows.0": {
+        "links": {
+          "self": "../StudentDayWorkflow/jamie-chen-day"
+        }
+      },
+      "workflows.1": {
+        "links": {
+          "self": "../StudentDayWorkflow/riley-kim-day"
+        }
+      },
+      "workflows.2": {
+        "links": {
+          "self": "../StudentDayWorkflow/alex-park-day"
+        }
+      },
+      "workflows.3": {
+        "links": {
+          "self": "../StudentDayWorkflow/emma-walsh-day"
+        }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../classroom-workflow-dashboard",
+        "name": "ClassroomWorkflowDashboard"
+      }
+    }
+  }
+}

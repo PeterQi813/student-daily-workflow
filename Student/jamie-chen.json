@@ -1,0 +1,41 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "firstName": "Jamie",
+      "lastName": "Chen",
+      "preferredName": "Jamie",
+      "gradeLevel": { "value": "2nd" },
+      "photoUrl": null,
+      "location": "In Classroom",
+      "locationDetail": null,
+      "hasIEP": true,
+      "has504": false,
+      "hasAllergy": true,
+      "hasMedication": false,
+      "tags": [
+        { "label": "IEP", "color": "#e05d50", "tagType": { "value": "accommodation" } },
+        { "label": "Allergy", "color": "#c08b30", "tagType": { "value": "medical" } }
+      ],
+      "alerts": [
+        {
+          "alertType": "Allergy",
+          "urgency": "Urgent",
+          "message": "Tree nut allergy — EpiPen in nurse's office",
+          "detail": "Check snack labels before distribution"
+        }
+      ]
+    },
+    "relationships": {
+      "supportStaff": {
+        "links": { "self": "../Staff/ms-martinez" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../student",
+        "name": "Student"
+      }
+    }
+  }
+}

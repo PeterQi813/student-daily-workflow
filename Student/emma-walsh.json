@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "firstName": "Emma",
+      "lastName": "Walsh",
+      "preferredName": "Emma",
+      "gradeLevel": { "value": "2nd" },
+      "photoUrl": null,
+      "location": "In Classroom",
+      "locationDetail": null,
+      "hasIEP": false,
+      "has504": false,
+      "hasAllergy": false,
+      "hasMedication": false,
+      "tags": [],
+      "alerts": []
+    },
+    "relationships": {
+      "supportStaff": {
+        "links": { "self": null }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../student",
+        "name": "Student"
+      }
+    }
+  }
+}

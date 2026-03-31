@@ -1,0 +1,176 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "studentName": "Emma Walsh",
+      "studentInitials": "EW",
+      "dateLabel": "Mar 14, 2026",
+      "gradeLabel": "2nd Grade",
+      "category": "Gen Ed",
+      "categoryTone": "gened",
+      "title": "Emma Walsh — Daily Workflow",
+      "preview": "On track — math 19/20, reading fluency +2 wpm. Excellent day.",
+      "progressPercent": 67,
+      "progressTone": "gened",
+      "unreadCount": 0,
+      "composerPlaceholder": "Log an observation about Emma...",
+      "participants": [
+        { "initials": "LC", "name": "Mr. Chen", "role": "Lead Teacher", "tone": "teacher" }
+      ],
+      "messages": [
+        {
+          "initials": "",
+          "author": "System",
+          "sentAt": "8:00 AM",
+          "text": "Good morning! Emma's daily workflow started. No IEP/504 accommodations. General education tracking.",
+          "tone": "system",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "8:16 AM",
+          "text": "Emma arrived at homeroom early. Led the class in the morning greeting song — great leadership moment!",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "8:16 AM",
+          "text": "Observation logged: Homeroom. Leadership behavior noted.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "9:00 AM",
+          "text": "DI Math — Emma scored 19/20 on Lesson 45. Only missed one subtraction problem. Helped a peer who was struggling.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "9:00 AM",
+          "text": "Academic entry: Math 19/20 (95%). Peer mentoring behavior noted. Math block documented.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "10:00 AM",
+          "text": "Reading workshop — Emma's fluency increased by 2 wpm this week. Reading at grade level. Chose a chapter book for independent reading.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "10:00 AM",
+          "text": "Reading session logged. Fluency +2 wpm, on grade level. Reading block documented.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "10:40 AM",
+          "text": "Snack and recess — Emma organized a group jump-rope game. Inclusive of all classmates.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "10:40 AM",
+          "text": "Social observation: leadership and inclusive play during recess. Snack block documented.",
+          "tone": "ai",
+          "isBot": "true"
+        }
+      ],
+      "steps": [
+        {
+          "label": "Homeroom",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "homeroom" }
+            ]
+          }
+        },
+        {
+          "label": "DI Math",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "math" }
+            ]
+          }
+        },
+        {
+          "label": "Reading",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "reading" }
+            ]
+          }
+        },
+        {
+          "label": "Snack / Recess",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "snack" }
+            ]
+          }
+        },
+        {
+          "label": "Social Skills",
+          "status": "upcoming",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "social skills" }
+            ]
+          }
+        },
+        {
+          "label": "Dismissal",
+          "status": "upcoming",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "dismissal" }
+            ]
+          }
+        }
+      ],
+      "attachments": []
+    },
+    "relationships": {
+      "student": {
+        "links": { "self": "../Student/emma-walsh" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../student-day-workflow",
+        "name": "StudentDayWorkflow"
+      }
+    }
+  }
+}

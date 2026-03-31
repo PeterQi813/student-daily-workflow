@@ -1,0 +1,19 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "assessmentName": "DI Math Lesson 45 Quiz",
+      "domain": "Math",
+      "score": "8/10",
+      "percentage": 80,
+      "benchmark": "Proficient",
+      "notes": "Struggled with teen numbers but self-corrected two errors. Strong understanding of single-digit counting."
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../attachment-cards",
+        "name": "AssessmentResultCard"
+      }
+    }
+  }
+}

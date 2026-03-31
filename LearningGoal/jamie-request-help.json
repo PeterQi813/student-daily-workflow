@@ -1,0 +1,24 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "goalTitle": "Request help using verbal or visual cue",
+      "description": "Jamie will independently request help from an adult using a verbal request or visual card in 3 out of 4 opportunities across settings.",
+      "domain": "Social",
+      "priority": "High",
+      "currentMastery": 30,
+      "targetMastery": 70
+    },
+    "relationships": {
+      "student": {
+        "links": { "self": "../Student/jamie-chen" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../learning-goal",
+        "name": "LearningGoal"
+      }
+    }
+  }
+}

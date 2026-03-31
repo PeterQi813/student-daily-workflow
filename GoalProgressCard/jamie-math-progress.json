@@ -1,0 +1,25 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "goalTitle": "Count to 20 independently",
+      "domain": "Math",
+      "currentMastery": 55,
+      "previousMastery": 45,
+      "targetMastery": 80,
+      "trialResult": "Counted to 15 independently, prompted 16-20",
+      "sessionNote": "Strong progress — counted to 15 without support. Teens remain challenging but self-corrected two errors."
+    },
+    "relationships": {
+      "linkedGoal": {
+        "links": { "self": "../LearningGoal/jamie-count-to-20" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../attachment-cards",
+        "name": "GoalProgressCard"
+      }
+    }
+  }
+}

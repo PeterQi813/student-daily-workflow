@@ -1,0 +1,19 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "incidentType": "Task refusal",
+      "severity": "Medium",
+      "antecedent": "Asked to begin independent reading — perceived task as too difficult",
+      "behavior": "Crossed arms, said 'I can't do this', pushed book away",
+      "consequence": "Offered choice of easier book or reading with partner. Chose partner reading, completed activity.",
+      "duration": "5 min"
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../attachment-cards",
+        "name": "BehaviorIncidentCard"
+      }
+    }
+  }
+}

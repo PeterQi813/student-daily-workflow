@@ -1,0 +1,24 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "goalTitle": "Answer comprehension questions at Level F",
+      "description": "Alex will answer literal and inferential comprehension questions about Level F texts with 80% accuracy across 3 sessions.",
+      "domain": "Reading",
+      "priority": "Medium",
+      "currentMastery": 60,
+      "targetMastery": 85
+    },
+    "relationships": {
+      "student": {
+        "links": { "self": "../Student/alex-park" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../learning-goal",
+        "name": "LearningGoal"
+      }
+    }
+  }
+}

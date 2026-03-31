@@ -1,0 +1,19 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "incidentType": "Off-task behavior",
+      "severity": "Low",
+      "antecedent": "Transition from math to reading — Riley lost materials during shift",
+      "behavior": "Left seat, wandered to book corner for 3 minutes before redirected",
+      "consequence": "Verbal redirect + offered fidget tool. Returned to seat and completed task.",
+      "duration": "3 min"
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../attachment-cards",
+        "name": "BehaviorIncidentCard"
+      }
+    }
+  }
+}

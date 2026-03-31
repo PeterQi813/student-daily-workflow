@@ -1,0 +1,19 @@
+{
+  "data": {
+    "type": "card",
+    "meta": {
+      "adoptsFrom": {
+        "module": "https://cardstack.com/base/index",
+        "name": "IndexCard"
+      },
+      "_touched": 1773524742404
+    },
+    "relationships": {
+      "cardsGrid": {
+        "links": {
+          "self": "./cards-grid"
+        }
+      }
+    }
+  }
+}

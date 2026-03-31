@@ -1,0 +1,208 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "studentName": "Riley Kim",
+      "studentInitials": "RK",
+      "dateLabel": "Mar 14, 2026",
+      "gradeLabel": "2nd Grade",
+      "category": "IEP",
+      "categoryTone": "iep",
+      "title": "Riley Kim — Daily Workflow",
+      "preview": "Reading: 15/25 sight words fluent, steady progress on target words.",
+      "progressPercent": 50,
+      "progressTone": "iep",
+      "unreadCount": 1,
+      "composerPlaceholder": "Log an observation about Riley...",
+      "participants": [
+        { "initials": "LC", "name": "Mr. Chen", "role": "Lead Teacher", "tone": "teacher" },
+        { "initials": "SM", "name": "Ms. Martinez", "role": "Classroom Aide", "tone": "aide" }
+      ],
+      "messages": [
+        {
+          "initials": "",
+          "author": "System",
+          "sentAt": "8:00 AM",
+          "text": "Good morning! Riley's daily workflow started. Focus goals: Sight words fluency, Focus duration. Reminder: ADHD medication due at 10:00 AM.",
+          "tone": "system",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "8:18 AM",
+          "text": "Riley arrived for homeroom, a bit groggy but on time. Participated in morning meeting — raised hand once.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "8:18 AM",
+          "text": "Observation logged: Homeroom. Participation noted (1 hand raise). Monitoring energy level.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "9:10 AM",
+          "text": "DI Math — Riley completed Lesson 45 workbook. Scored 14/20. Needed redirection twice during independent work. Better focus in small group.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "9:10 AM",
+          "text": "Academic entry: Math. Score 14/20 recorded. Focus note: 2 redirections needed — tracking for 'Focus duration' goal.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "SM",
+          "author": "Ms. Martinez",
+          "sentAt": "9:50 AM",
+          "text": "Reading workshop — Riley working on sight words. Brief off-task moment during transition (wandered to book corner ~3 min), redirected with fidget tool. Now focused on word cards.",
+          "tone": "aide",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "9:50 AM",
+          "text": "Reading session logged. Behavioral note: brief off-task (3 min) during transition. Incident card created. Sight word practice in progress.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "10:15 AM",
+          "text": "Sight word quick check: Riley read 15/25 target words fluently. 'the', 'and', 'was' are automatic now. Working on 'because' and 'would'.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "10:15 AM",
+          "text": "Goal progress: 'Sight words' mastery updated 52% → 60%. Assessment: 15/25 Approaching. Reading block complete.",
+          "tone": "ai",
+          "isBot": "true"
+        }
+      ],
+      "steps": [
+        {
+          "label": "Homeroom",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "homeroom" }
+            ]
+          }
+        },
+        {
+          "label": "DI Math",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "math" }
+            ]
+          }
+        },
+        {
+          "label": "Reading",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "reading" }
+            ]
+          }
+        },
+        {
+          "label": "Snack / Recess",
+          "status": "upcoming",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "snack" }
+            ]
+          }
+        },
+        {
+          "label": "OT / Motor",
+          "status": "upcoming",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "motor" }
+            ]
+          }
+        },
+        {
+          "label": "Dismissal",
+          "status": "upcoming",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "dismissal" }
+            ]
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "attachmentType": "behavior-incident",
+          "typeLabel": "BEHAVIOR",
+          "status": "Off-task, Low severity",
+          "ctaLabel": "View Incident",
+          "messageRef": "6"
+        },
+        {
+          "attachmentType": "goal-progress",
+          "typeLabel": "GOAL PROGRESS",
+          "status": "Reading: 52% → 60%",
+          "ctaLabel": "View Goal Data",
+          "messageRef": "8"
+        },
+        {
+          "attachmentType": "assessment",
+          "typeLabel": "ASSESSMENT",
+          "status": "15/25 — Approaching",
+          "ctaLabel": "View Results",
+          "messageRef": "8"
+        }
+      ]
+    },
+    "relationships": {
+      "student": {
+        "links": { "self": "../Student/riley-kim" }
+      },
+      "attachments.0.linkedCard": {
+        "links": { "self": "../BehaviorIncidentCard/riley-focus-break" }
+      },
+      "attachments.1.linkedCard": {
+        "links": { "self": "../GoalProgressCard/riley-reading-progress" }
+      },
+      "attachments.2.linkedCard": {
+        "links": { "self": "../AssessmentResultCard/riley-sight-word-check" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../student-day-workflow",
+        "name": "StudentDayWorkflow"
+      }
+    }
+  }
+}

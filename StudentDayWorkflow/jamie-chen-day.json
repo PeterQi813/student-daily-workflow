@@ -1,0 +1,250 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "studentName": "Jamie Chen",
+      "studentInitials": "JC",
+      "dateLabel": "Mar 14, 2026",
+      "gradeLabel": "2nd Grade",
+      "category": "IEP",
+      "categoryTone": "iep",
+      "title": "Jamie Chen — Daily Workflow",
+      "preview": "Social skills group: Jamie asked for help twice without prompting!",
+      "progressPercent": 83,
+      "progressTone": "iep",
+      "unreadCount": 2,
+      "composerPlaceholder": "Log an observation about Jamie...",
+      "participants": [
+        { "initials": "LC", "name": "Mr. Chen", "role": "Lead Teacher", "tone": "teacher" },
+        { "initials": "SM", "name": "Ms. Martinez", "role": "Classroom Aide", "tone": "aide" },
+        { "initials": "KR", "name": "Ms. Rivers", "role": "Speech Therapist", "tone": "therapist" }
+      ],
+      "messages": [
+        {
+          "initials": "",
+          "author": "System",
+          "sentAt": "8:00 AM",
+          "text": "Good morning! Jamie's daily workflow started. Focus goals: Count to 20, Request help independently.",
+          "tone": "system",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "8:20 AM",
+          "text": "Jamie arrived for homeroom on time. Good energy today, greeted peers independently without prompting.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "8:20 AM",
+          "text": "Observation logged: Homeroom attendance. Social note: independent peer greeting — positive indicator for 'Request help' goal.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "9:00 AM",
+          "text": "DI Math Lesson 45. Jamie counted to 15 independently, needed verbal prompt for 16-20. Self-corrected two errors on teens.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "9:00 AM",
+          "text": "Academic entry: Math, linked to 'Count to 20' goal. Mastery updated: 45% → 55%. Trial data attached.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "SM",
+          "author": "Ms. Martinez",
+          "sentAt": "9:35 AM",
+          "text": "Math quiz administered: Jamie scored 8/10. Struggled with teen numbers but self-corrected two errors. Strong single-digit work.",
+          "tone": "aide",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "9:35 AM",
+          "text": "Assessment result: DI Math Lesson 45 Quiz — 8/10 (80%), Proficient. Math block documentation complete.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "10:00 AM",
+          "text": "Reading workshop — Jamie selected a level C book and is reading independently. Good focus, tracking with finger.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "10:00 AM",
+          "text": "Reading session logged. Independent book selection at appropriate level noted.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "10:35 AM",
+          "text": "Snack time — Jamie checked label for nuts (nut-free, good). Shared crackers with Riley unprompted. Great social moment!",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "10:35 AM",
+          "text": "Social observation: spontaneous sharing behavior. Allergy protocol followed (label check). Positive social interaction recorded.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "LC",
+          "author": "Mr. Chen",
+          "sentAt": "11:15 AM",
+          "text": "Social skills group: Jamie asked for help twice during the activity without any adult prompting! Big milestone. Also initiated a turn-taking game with peers.",
+          "tone": "teacher",
+          "isBot": ""
+        },
+        {
+          "initials": "",
+          "author": "AI Classification",
+          "sentAt": "11:15 AM",
+          "text": "Goal progress: 'Request help' mastery updated 30% → 50%. Two independent help requests documented. Social block complete.",
+          "tone": "ai",
+          "isBot": "true"
+        },
+        {
+          "initials": "",
+          "author": "System",
+          "sentAt": "11:45 AM",
+          "text": "5/6 schedule blocks documented. Day summary: strong math progress (+10% mastery), notable social growth (+20% on help requests). Allergy protocol followed.",
+          "tone": "system",
+          "isBot": "true"
+        }
+      ],
+      "steps": [
+        {
+          "label": "Homeroom",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "homeroom" }
+            ]
+          }
+        },
+        {
+          "label": "DI Math",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "all",
+            "conditions": [
+              { "subject": "message", "textContains": "math" },
+              { "subject": "attachment", "attachmentType": "goal-progress" }
+            ]
+          }
+        },
+        {
+          "label": "Reading",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "reading" }
+            ]
+          }
+        },
+        {
+          "label": "Snack / Recess",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "snack" }
+            ]
+          }
+        },
+        {
+          "label": "Social Skills",
+          "status": "completed",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "social skills" }
+            ]
+          }
+        },
+        {
+          "label": "Dismissal",
+          "status": "upcoming",
+          "weight": 1,
+          "predicate": {
+            "group": "any",
+            "conditions": [
+              { "subject": "message", "textContains": "dismissal" }
+            ]
+          }
+        }
+      ],
+      "attachments": [
+        {
+          "attachmentType": "goal-progress",
+          "typeLabel": "GOAL PROGRESS",
+          "status": "Math: 45% → 55%",
+          "ctaLabel": "View Goal Data",
+          "messageRef": "4"
+        },
+        {
+          "attachmentType": "assessment",
+          "typeLabel": "ASSESSMENT",
+          "status": "8/10 — Proficient",
+          "ctaLabel": "View Results",
+          "messageRef": "6"
+        },
+        {
+          "attachmentType": "goal-progress",
+          "typeLabel": "GOAL PROGRESS",
+          "status": "Social: 30% → 50%",
+          "ctaLabel": "View Goal Data",
+          "messageRef": "12"
+        }
+      ]
+    },
+    "relationships": {
+      "student": {
+        "links": { "self": "../Student/jamie-chen" }
+      },
+      "attachments.0.linkedCard": {
+        "links": { "self": "../GoalProgressCard/jamie-math-progress" }
+      },
+      "attachments.1.linkedCard": {
+        "links": { "self": "../AssessmentResultCard/jamie-math-quiz" }
+      },
+      "attachments.2.linkedCard": {
+        "links": { "self": "../GoalProgressCard/jamie-social-progress" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../student-day-workflow",
+        "name": "StudentDayWorkflow"
+      }
+    }
+  }
+}

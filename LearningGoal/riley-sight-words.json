@@ -1,0 +1,24 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "goalTitle": "Read 50 Dolch sight words fluently",
+      "description": "Riley will read 50 Dolch pre-primer and primer sight words with automaticity (within 3 seconds) in 4 out of 5 sessions.",
+      "domain": "Reading",
+      "priority": "High",
+      "currentMastery": 40,
+      "targetMastery": 80
+    },
+    "relationships": {
+      "student": {
+        "links": { "self": "../Student/riley-kim" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../learning-goal",
+        "name": "LearningGoal"
+      }
+    }
+  }
+}

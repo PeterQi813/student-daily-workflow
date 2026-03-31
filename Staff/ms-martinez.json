@@ -1,0 +1,18 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "name": "Ms. Martinez",
+      "role": "Lead Teacher",
+      "initials": "MM",
+      "avatar": null,
+      "color": "teal"
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../staff",
+        "name": "Staff"
+      }
+    }
+  }
+}

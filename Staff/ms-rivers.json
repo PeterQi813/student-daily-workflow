@@ -1,0 +1,18 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "name": "Ms. Rivers",
+      "role": "Support Specialist",
+      "initials": "SR",
+      "avatar": null,
+      "color": "purple"
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../staff",
+        "name": "Staff"
+      }
+    }
+  }
+}

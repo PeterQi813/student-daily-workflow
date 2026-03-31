@@ -1,0 +1,25 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "goalTitle": "Request help without prompting",
+      "domain": "Social",
+      "currentMastery": 50,
+      "previousMastery": 30,
+      "targetMastery": 80,
+      "trialResult": "Asked for help 2x independently in group",
+      "sessionNote": "Significant growth — Jamie asked for help twice during social skills group without any adult prompting. Peer modeling may be contributing factor."
+    },
+    "relationships": {
+      "linkedGoal": {
+        "links": { "self": "../LearningGoal/jamie-request-help" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../attachment-cards",
+        "name": "GoalProgressCard"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "firstName": "Alex",
+      "lastName": "Park",
+      "preferredName": "Alex",
+      "gradeLevel": { "value": "2nd" },
+      "photoUrl": null,
+      "location": "In Classroom",
+      "locationDetail": null,
+      "hasIEP": false,
+      "has504": true,
+      "hasAllergy": false,
+      "hasMedication": false,
+      "tags": [
+        { "label": "504", "color": "#7c5fc4", "tagType": { "value": "accommodation" } }
+      ],
+      "alerts": []
+    },
+    "relationships": {
+      "supportStaff": {
+        "links": { "self": "../Staff/ms-rivers" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../student",
+        "name": "Student"
+      }
+    }
+  }
+}

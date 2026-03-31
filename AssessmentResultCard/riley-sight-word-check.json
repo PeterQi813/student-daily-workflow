@@ -1,0 +1,19 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "assessmentName": "Sight Word Quick Check",
+      "domain": "Reading",
+      "score": "15/25",
+      "percentage": 60,
+      "benchmark": "Approaching",
+      "notes": "Riley read 15 of 25 target sight words fluently. Common words are automatic; multi-syllable words need more practice."
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../attachment-cards",
+        "name": "AssessmentResultCard"
+      }
+    }
+  }
+}

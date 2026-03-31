@@ -1,0 +1,41 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "firstName": "Riley",
+      "lastName": "Kim",
+      "preferredName": "Riley",
+      "gradeLevel": { "value": "2nd" },
+      "photoUrl": null,
+      "location": "In Classroom",
+      "locationDetail": null,
+      "hasIEP": true,
+      "has504": false,
+      "hasAllergy": false,
+      "hasMedication": true,
+      "tags": [
+        { "label": "IEP", "color": "#e05d50", "tagType": { "value": "accommodation" } },
+        { "label": "ADHD Meds", "color": "#7c5fc4", "tagType": { "value": "medical" } }
+      ],
+      "alerts": [
+        {
+          "alertType": "Medication",
+          "urgency": "Urgent",
+          "message": "ADHD medication due at 10:00 AM — check with nurse",
+          "detail": "Adderall 10mg, must be administered by school nurse"
+        }
+      ]
+    },
+    "relationships": {
+      "supportStaff": {
+        "links": { "self": "../Staff/mr-chen" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../student",
+        "name": "Student"
+      }
+    }
+  }
+}

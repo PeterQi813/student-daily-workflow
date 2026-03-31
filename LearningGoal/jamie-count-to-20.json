@@ -1,0 +1,24 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "goalTitle": "Count to 20 with 1:1 correspondence",
+      "description": "Jamie will demonstrate ability to count objects up to 20 with 1:1 correspondence in 4 out of 5 trials across 3 consecutive sessions.",
+      "domain": "Math",
+      "priority": "High",
+      "currentMastery": 55,
+      "targetMastery": 80
+    },
+    "relationships": {
+      "student": {
+        "links": { "self": "../Student/jamie-chen" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../learning-goal",
+        "name": "LearningGoal"
+      }
+    }
+  }
+}

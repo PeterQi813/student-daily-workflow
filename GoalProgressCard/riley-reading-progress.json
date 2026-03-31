@@ -1,0 +1,25 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "goalTitle": "Read 25 sight words fluently",
+      "domain": "Reading",
+      "currentMastery": 60,
+      "previousMastery": 52,
+      "targetMastery": 90,
+      "trialResult": "15/25 words read fluently, +2 from last session",
+      "sessionNote": "Steady progress on sight words. 'the', 'and', 'was' now automatic. Working on 'because' and 'would'."
+    },
+    "relationships": {
+      "linkedGoal": {
+        "links": { "self": "../LearningGoal/riley-sight-words" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../attachment-cards",
+        "name": "GoalProgressCard"
+      }
+    }
+  }
+}

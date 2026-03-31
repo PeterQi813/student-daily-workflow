@@ -1,0 +1,24 @@
+{
+  "data": {
+    "type": "card",
+    "attributes": {
+      "goalTitle": "Sustain attention for 10-minute instructional blocks",
+      "description": "Riley will sustain on-task attention during structured instructional blocks for 10 consecutive minutes with no more than 1 prompt, across 3 consecutive sessions.",
+      "domain": "Behavioral",
+      "priority": "Medium",
+      "currentMastery": 35,
+      "targetMastery": 60
+    },
+    "relationships": {
+      "student": {
+        "links": { "self": "../Student/riley-kim" }
+      }
+    },
+    "meta": {
+      "adoptsFrom": {
+        "module": "../learning-goal",
+        "name": "LearningGoal"
+      }
+    }
+  }
+}
